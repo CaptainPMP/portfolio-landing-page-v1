@@ -2,7 +2,17 @@
 @import 'reset/reset';
 
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Kanit', sans-serif;
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+$primary-color : #00FACD;
+
+@import 'components/nav';
+@import 'components/welcome';
+@import 'components/about-me';

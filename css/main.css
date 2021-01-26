@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: 'Kanit', sans-serif;
+  box-sizing: border-box; }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif; }
+
+nav .nav-container {
+  height: 172px;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px; }
+  nav .nav-container .nav-left ul {
+    display: flex; }
+    nav .nav-container .nav-left ul li {
+      margin: 0 2rem;
+      font-size: 22px; }
+      nav .nav-container .nav-left ul li a {
+        text-decoration: none;
+        color: black;
+        transition: .3s;
+        border-bottom: 2px solid transparent; }
+        nav .nav-container .nav-left ul li a:hover {
+          color: #00FACD;
+          border-bottom: 2px solid #00FACD;
+          padding-bottom: .25rem; }
+  nav .nav-container .nav-right .img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    overflow: hidden; }
+    nav .nav-container .nav-right .img img {
+      width: 100%; }
+
+.welcome {
+  height: 480px;
+  background-color: #f3f3f3;
+  padding: 2.5rem; }
+  .welcome .welcome-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .welcome .welcome-container .wc-left {
+      margin: 0 2rem;
+      width: 45%;
+      height: 400px; }
+      .welcome .welcome-container .wc-left .img {
+        border: 1px solid red;
+        width: 100%;
+        height: 100%; }
+        .welcome .welcome-container .wc-left .img img {
+          width: 100%; }
+    .welcome .welcome-container .wc-right {
+      margin: 0 2rem;
+      width: 55%;
+      height: 100%;
+      padding: 3rem; }
+      .welcome .welcome-container .wc-right h3 {
+        font-size: 30px;
+        color: #686868; }
+      .welcome .welcome-container .wc-right h1 {
+        font-size: 46px;
+        line-height: 1.25; }
+      .welcome .welcome-container .wc-right button {
+        margin-top: 2rem;
+        background-color: #00FACD;
+        color: #fff;
+        width: 150px;
+        height: 48px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer; }
+
+.about-me {
+  height: 525px;
+  border: 1px solid red;
+  padding: 2.5rem; }
+  .about-me .about-me-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem; }
+    .about-me .about-me-container .about-me-left {
+      padding: 1rem; }
+      .about-me .about-me-container .about-me-left h1 {
+        font-size: 56px; }
+      .about-me .about-me-container .about-me-left p {
+        font-size: 24px;
+        line-height: 1.75; }
+    .about-me .about-me-container .about-me-right .img {
+      border: 1px solid red;
+      width: 550px;
+      height: 400px; }
+      .about-me .about-me-container .about-me-right .img img {
+        width: 100%; }
