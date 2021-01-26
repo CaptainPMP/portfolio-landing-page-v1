@@ -138,7 +138,8 @@ nav .nav-container {
     .about-me .about-me-container .about-me-left {
       padding: 1rem; }
       .about-me .about-me-container .about-me-left h1 {
-        font-size: 56px; }
+        font-size: 56px;
+        color: #00FACD; }
       .about-me .about-me-container .about-me-left p {
         font-size: 24px;
         line-height: 1.75; }
@@ -156,7 +157,8 @@ nav .nav-container {
   .skills h1 {
     font-size: 56px;
     text-align: center;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    color: #00FACD; }
   .skills .skills-container {
     max-width: 1140px;
     margin: 0 auto;
