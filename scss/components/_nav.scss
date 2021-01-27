@@ -3,17 +3,18 @@ nav {
 
     .nav-container {
         height: 172px;
-        padding: 4rem;
+        // padding: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         max-width: 1140px;
+        margin: 0 auto;
 
         .nav-left {
             ul {
                 display: flex;
                 li {
-                    margin: 0 2rem;
+                    margin: 0 1rem;
                     font-size: 22px;
 
                     a {

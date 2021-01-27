@@ -1,5 +1,5 @@
 .skills {
-    height: 525;
+    
     padding: 2.5rem;
     background-color: #f3f3f3;
 
@@ -10,6 +10,7 @@
         color: $primary-color;
     }
     .skills-container {
+        height: 525;
         // border: 1px solid red;
         max-width: 1140px;
         margin: 0 auto;
@@ -32,7 +33,8 @@
             .skills-left-container {
                 background-color: #E5E5E5;
                 height: 100%;
-                padding: 1rem;
+                padding: 3rem;
+                // margin-left: 5rem;
                 // border: 1px solid red;
 
                 // padding: 2rem;

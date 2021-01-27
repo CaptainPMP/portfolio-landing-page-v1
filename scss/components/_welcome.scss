@@ -8,15 +8,18 @@
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
+        // height: 100%;
         // padding: 2rem;
         justify-content: space-between;
         align-items: center;
+        height: 100%;
         // border: 1px solid red;
         .wc-left {
             // border: 1px solid red;
             margin: 0 2rem;
             width: 45%;
-            height: 400px;
+            // height: 400px;
+            height: 100%;
 
             .img {
                 border: 1px solid red;
@@ -35,7 +38,8 @@
             width: 55%;
             // height: 400px;
             height: 100%;
-            padding: 3rem;
+            padding: 2rem;
+            height: 100%;
 
             h3 {
                 font-size: 30px;

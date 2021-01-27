@@ -46,9 +46,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html {
+html, body {
   font-family: 'Kanit', sans-serif;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 * {
   box-sizing: border-box;
@@ -56,15 +57,15 @@ html {
 
 nav .nav-container {
   height: 172px;
-  padding: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1140px; }
+  max-width: 1140px;
+  margin: 0 auto; }
   nav .nav-container .nav-left ul {
     display: flex; }
     nav .nav-container .nav-left ul li {
-      margin: 0 2rem;
+      margin: 0 1rem;
       font-size: 22px; }
       nav .nav-container .nav-left ul li a {
         text-decoration: none;
@@ -72,8 +73,8 @@ nav .nav-container {
         transition: .3s;
         border-bottom: 2px solid transparent; }
         nav .nav-container .nav-left ul li a:hover {
-          color: #00FACD;
-          border-bottom: 2px solid #00FACD;
+          color: rgba(0, 211, 165, 0.822);
+          border-bottom: 2px solid rgba(0, 211, 165, 0.822);
           padding-bottom: .25rem; }
   nav .nav-container .nav-right .img {
     width: 115px;
@@ -92,11 +93,12 @@ nav .nav-container {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    height: 100%; }
     .welcome .welcome-container .wc-left {
       margin: 0 2rem;
       width: 45%;
-      height: 400px; }
+      height: 100%; }
       .welcome .welcome-container .wc-left .img {
         border: 1px solid red;
         width: 100%;
@@ -107,7 +109,8 @@ nav .nav-container {
       margin: 0 2rem;
       width: 55%;
       height: 100%;
-      padding: 3rem; }
+      padding: 2rem;
+      height: 100%; }
       .welcome .welcome-container .wc-right h3 {
         font-size: 30px;
         color: #686868; }
@@ -116,7 +119,7 @@ nav .nav-container {
         line-height: 1.25; }
       .welcome .welcome-container .wc-right button {
         margin-top: 2rem;
-        background-color: #00FACD;
+        background-color: rgba(0, 211, 165, 0.822);
         color: #fff;
         width: 150px;
         height: 48px;
@@ -126,7 +129,6 @@ nav .nav-container {
 
 .about-me {
   height: 525px;
-  border: 1px solid red;
   padding: 2.5rem; }
   .about-me .about-me-container {
     max-width: 1140px;
@@ -134,12 +136,15 @@ nav .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem; }
+    padding: 2rem;
+    width: 100%;
+    height: 100%; }
     .about-me .about-me-container .about-me-left {
       padding: 1rem; }
       .about-me .about-me-container .about-me-left h1 {
         font-size: 56px;
-        color: #00FACD; }
+        color: rgba(0, 211, 165, 0.822);
+        border-bottom: 2px; }
       .about-me .about-me-container .about-me-left p {
         font-size: 24px;
         line-height: 1.75; }
@@ -151,15 +156,15 @@ nav .nav-container {
         width: 100%; }
 
 .skills {
-  height: 525;
   padding: 2.5rem;
   background-color: #f3f3f3; }
   .skills h1 {
     font-size: 56px;
     text-align: center;
     margin-bottom: 2rem;
-    color: #00FACD; }
+    color: rgba(0, 211, 165, 0.822); }
   .skills .skills-container {
+    height: 525;
     max-width: 1140px;
     margin: 0 auto;
     display: grid;
@@ -174,7 +179,7 @@ nav .nav-container {
       .skills .skills-container .skills-left .skills-left-container {
         background-color: #E5E5E5;
         height: 100%;
-        padding: 1rem; }
+        padding: 3rem; }
         .skills .skills-container .skills-left .skills-left-container h2 {
           font-size: 30px; }
         .skills .skills-container .skills-left .skills-left-container ul {
@@ -222,6 +227,125 @@ nav .nav-container {
               height: 70px;
               display: flex;
               align-items: center;
-              background-color: #00FACD;
+              background-color: rgba(0, 211, 165, 0.822);
               padding: 1rem;
               color: #fff; }
+
+.history {
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem; }
+  .history .history-container {
+    max-width: 1140px;
+    margin: 0 auto; }
+    .history .history-container h1 {
+      font-size: 56px;
+      color: rgba(0, 211, 165, 0.822);
+      margin: 1rem auto;
+      text-align: center; }
+    .history .history-container .history-card-all {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+      padding: 1rem; }
+      .history .history-container .history-card-all .history-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 5px 5px 3px grey;
+        height: 350px;
+        background-color: #E9E9E9;
+        padding: 1rem;
+        transition: .3s; }
+        .history .history-container .history-card-all .history-card:hover {
+          transform: translateY(-2rem); }
+        .history .history-container .history-card-all .history-card .history-card-container {
+          width: 100%;
+          height: 100%;
+          display: grid;
+          grid-template-rows: 1fr 2fr 1fr; }
+          .history .history-container .history-card-all .history-card .history-card-container h2.header {
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+            font-size: 22px; }
+          .history .history-container .history-card-all .history-card .history-card-container .img {
+            grid-row: 2 / 4;
+            background-color: white;
+            width: 100%;
+            overflow: hidden;
+            text-align: center; }
+            .history .history-container .history-card-all .history-card .history-card-container .img img {
+              height: 100%; }
+          .history .history-container .history-card-all .history-card .history-card-container .history-info {
+            padding: 2rem;
+            font-size: 22px;
+            text-align: center;
+            width: 100%; }
+
+footer {
+  height: 150px;
+  background-color: rgba(0, 211, 165, 0.822); }
+  footer .footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    padding: 2rem;
+    color: #fff; }
+    footer .footer-container .footer-right {
+      line-height: 1.5; }
+
+@media screen and (max-width: 1045px) {
+  .welcome {
+    padding: 1.5rem; }
+    .welcome .welcome-container .wc-right {
+      margin: 0 1rem;
+      padding: 1rem; }
+      .welcome .welcome-container .wc-right button {
+        margin-top: 0 !important; }
+  .about-me {
+    height: auto !important; }
+    .about-me .about-me-container {
+      flex-direction: column; }
+      .about-me .about-me-container .about-me-right {
+        margin-top: 2rem; }
+  .history .history-container {
+    margin: 0 1rem !important; }
+    .history .history-container h1 {
+      margin: 1rem; }
+    .history .history-container .history-card-all {
+      grid-gap: 1.5rem; } }
+
+@media screen and (max-width: 700px) {
+  nav .nav-container {
+    height: auto;
+    flex-direction: column; }
+    nav .nav-container .nav-left ul {
+      padding: 1rem;
+      flex-direction: column;
+      line-height: 1.5; }
+    nav .nav-container .nav-right {
+      margin: 1rem 0; }
+  .welcome .welcome-container .wc-right h3 {
+    font-size: 22px; }
+  .welcome .welcome-container .wc-right h1 {
+    font-size: 42px; }
+  .skills .skills-container {
+    grid-template-columns: 1fr; }
+  .history {
+    height: auto; }
+    .history .history-container {
+      padding: 2rem; }
+      .history .history-container .history-card-all {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr; }
+  footer .footer-container .footer-right ul {
+    font-size: 22px; } }

@@ -1,0 +1,60 @@
+@media screen and (max-width: 700px) {
+    nav {
+        // height: auto;
+        .nav-container {
+            height: auto;
+            flex-direction: column;
+
+            .nav-left {
+                ul {
+                    padding: 1rem;
+                    flex-direction: column;
+                    line-height: 1.5;
+                }
+            }
+            .nav-right {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    .welcome {
+        .welcome-container {
+            .wc-right {
+                h3 {
+                    font-size: 22px;
+                }
+                h1 {
+                    font-size: 42px;
+                }
+            }
+        }
+    }
+
+    .skills {
+        .skills-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .history {
+        height: auto;
+        .history-container {
+            padding: 2rem;
+            .history-card-all {
+                grid-template-rows: repeat(3,1fr);
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    footer {
+        .footer-container {
+            .footer-right {
+                ul {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

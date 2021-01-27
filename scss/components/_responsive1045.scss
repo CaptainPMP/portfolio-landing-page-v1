@@ -1,0 +1,45 @@
+@media screen and (max-width: 1045px) {
+    .welcome {
+        padding: 1.5rem;
+        .welcome-container {
+            .wc-right {
+                margin: 0 1rem;
+                padding: 1rem;
+                button {
+                    margin-top: 0 !important;
+                }
+            }
+        }
+    }
+
+    .about-me {
+        height: auto !important;
+        .about-me-container {
+            flex-direction: column;
+            
+            .about-me-right {
+                margin-top: 2rem ;
+            }
+        }
+    }
+
+    .history {
+        // padding: 1rem;
+        .history-container {
+            margin: 0 1rem !important;
+
+            h1 {
+                margin: 1rem;
+            }
+            // padding: 1rem !important;
+
+            .history-card-all {
+                // grid-template-columns: 1fr !important;
+                // grid-template-rows: repeat(3,1fr);
+                grid-gap: 1.5rem;
+                // margin: 0 1rem !important;
+            }
+        }
+    }
+}
+
