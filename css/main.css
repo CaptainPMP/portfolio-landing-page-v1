@@ -103,7 +103,8 @@ nav .nav-container {
       .welcome .welcome-container .wc-left .img {
         width: 100%;
         height: 100%;
-        overflow: hidden; }
+        overflow: hidden;
+        border-radius: 25px; }
         .welcome .welcome-container .wc-left .img img {
           width: 100%; }
     .welcome .welcome-container .wc-right {
@@ -155,7 +156,8 @@ nav .nav-container {
     .about-me .about-me-container .about-me-right .img {
       width: 550px;
       height: 400px;
-      overflow: hidden; }
+      overflow: hidden;
+      border-radius: 25px; }
       .about-me .about-me-container .about-me-right .img img {
         width: 100%; }
 
