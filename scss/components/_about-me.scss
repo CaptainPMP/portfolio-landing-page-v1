@@ -28,12 +28,14 @@
         }
         .about-me-right{
             .img {
-                border: 1px solid red;
+                // border: 1px solid red;
                 width: 550px;
                 height: 400px;
+                overflow: hidden;
 
                 img {
                     width: 100%;
+                    // transform: translate(0,-25%);
                 }
             }
         }

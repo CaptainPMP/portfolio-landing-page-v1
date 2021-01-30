@@ -5,6 +5,7 @@ html,body {
     font-family: 'Kanit', sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -24,4 +25,5 @@ $primary-color : rgba(0, 211, 165, 0.822);
 @import 'components/responsive1045';
 @import 'components/responsive700';
 @import 'components/responsive562';
+@import 'components/responsive540';
 @import 'components/responsive480';

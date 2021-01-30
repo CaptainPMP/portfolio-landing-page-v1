@@ -22,12 +22,14 @@
             height: 100%;
 
             .img {
-                border: 1px solid red;
+                // border: 1px solid red;
                 width: 100%;
                 height: 100%;
+                overflow: hidden;
                 
                 img {
                     width: 100%;
+                    // transform: translate(0, -20%);
                 }
             }
         }
@@ -58,6 +60,11 @@
                 border-radius: 50px;
                 border: none;
                 cursor: pointer;
+                transition: .3s;
+
+                &:hover {
+                    background-color: #00aa8b;
+                }
             }
         }
     }
