@@ -363,11 +363,24 @@ footer {
     flex-direction: column; }
     nav .nav-container .nav-left {
       flex-direction: column; }
+      nav .nav-container .nav-left #toggle {
+        border-bottom: 0;
+        display: none; }
+        nav .nav-container .nav-left #toggle:hover {
+          color: black;
+          border-bottom: 0;
+          padding-bottom: 0; }
       nav .nav-container .nav-left ul {
         padding: 1rem;
         flex-direction: column;
         line-height: 1.5;
         display: none; }
+        nav .nav-container .nav-left ul li a {
+          border-bottom: 0px; }
+          nav .nav-container .nav-left ul li a:hover {
+            color: black !important;
+            border-bottom: 0px;
+            padding-bottom: 0rem; }
       nav .nav-container .nav-left a {
         display: inline-block !important; }
     nav .nav-container .nav-right {

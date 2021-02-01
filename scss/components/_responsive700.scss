@@ -6,12 +6,38 @@
             flex-direction: column;
 
             .nav-left {
+                #toggle {
+                    // text-decoration: none;
+                    // color: black;
+                    // transition: .3s;
+                    border-bottom: 0;
+                    // font-size: 1.5rem;
+    
+                    &:hover {
+                        color: black;
+                        border-bottom: 0;
+                        padding-bottom: 0;
+                    }
+    
+                    display: none;
+                }
                 flex-direction: column;
                 ul {
                     padding: 1rem;
                     flex-direction: column;
                     line-height: 1.5;
                     display: none;
+
+                    li {
+                        a {
+                            border-bottom: 0px;
+                            &:hover {
+                                color: black !important;
+                                border-bottom: 0px;
+                                padding-bottom: 0rem;
+                            }
+                        }
+                    }
                 }
 
                 a {
