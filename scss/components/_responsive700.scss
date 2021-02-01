@@ -6,12 +6,30 @@
             flex-direction: column;
 
             .nav-left {
+                flex-direction: column;
                 ul {
                     padding: 1rem;
                     flex-direction: column;
                     line-height: 1.5;
+                    display: none;
                 }
+
+                a {
+                    display: inline-block !important;
+                }
+                // li:not(:first-child){
+                //     display: none;
+                // }
+                // li:first-child {
+                //     display: inline-block !important;
+                // }
+
+                // .responsive li {
+                //     transition: .3s;
+                //     display: inline-block;
+                // }
             }
+
             .nav-right {
                 margin: 1rem 0;
             }
@@ -60,6 +78,19 @@
     .skills {
         .skills-container {
             grid-template-columns: 1fr;
+            .skills-left {
+                .skill-left-container {
+                    border-radius: 1.5rem;
+                }
+            }
+            // .skills-right {
+            //     .sk-right-1 {
+            //         border-radius: 1.5rem;
+            //     }
+            //     .sk-right-2 {
+            //         border-radius: 1.5rem;
+            //     }
+            // }
         }
     }
 

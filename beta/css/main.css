@@ -56,6 +56,9 @@ html, body {
   box-sizing: border-box;
   font-family: 'Kanit', sans-serif; }
 
+.responsive li:not(:first-child) {
+  display: inline-block; }
+
 nav .nav-container {
   height: 172px;
   display: flex;
@@ -63,6 +66,8 @@ nav .nav-container {
   align-items: center;
   max-width: 1140px;
   margin: 0 auto; }
+  nav .nav-container .nav-left .responsive li {
+    display: none; }
   nav .nav-container .nav-left ul {
     display: flex; }
     nav .nav-container .nav-left ul li {
@@ -106,7 +111,8 @@ nav .nav-container {
         overflow: hidden;
         border-radius: 25px; }
         .welcome .welcome-container .wc-left .img img {
-          width: 100%; }
+          width: 100%;
+          border-radius: 25px; }
     .welcome .welcome-container .wc-right {
       margin: 0 2rem;
       width: 55%;
@@ -133,7 +139,7 @@ nav .nav-container {
           background-color: #00aa8b; }
 
 .about-me {
-  height: 525px;
+  height: auto;
   padding: 2.5rem; }
   .about-me .about-me-container {
     max-width: 1140px;
@@ -155,11 +161,11 @@ nav .nav-container {
         line-height: 1.75; }
     .about-me .about-me-container .about-me-right .img {
       width: 550px;
-      height: 400px;
-      overflow: hidden;
-      border-radius: 25px; }
+      height: auto;
+      overflow: hidden; }
       .about-me .about-me-container .about-me-right .img img {
-        width: 100%; }
+        width: 100%;
+        border-radius: 25px; }
 
 .skills {
   padding: 2.5rem;
@@ -185,14 +191,13 @@ nav .nav-container {
       .skills .skills-container .skills-left .skills-left-container {
         background-color: #E5E5E5;
         height: 100%;
-        padding: 2rem; }
+        padding: 2rem;
+        border-radius: 25px; }
         .skills .skills-container .skills-left .skills-left-container h2 {
           font-size: 2rem;
           text-align: center; }
         .skills .skills-container .skills-left .skills-left-container ul {
           line-height: 1.5; }
-          .skills .skills-container .skills-left .skills-left-container ul li {
-            text-indent: 2rem; }
     .skills .skills-container .skills-right {
       padding: 2rem;
       width: 100%; }
@@ -207,7 +212,8 @@ nav .nav-container {
           display: flex;
           flex-direction: column;
           align-items: center;
-          justify-content: center; }
+          justify-content: center;
+          border-radius: 25px; }
           .skills .skills-container .skills-right .skills-right-container .sk-right-1 h2 {
             font-size: 30px; }
           .skills .skills-container .skills-right .skills-right-container .sk-right-1 ul {
@@ -217,7 +223,8 @@ nav .nav-container {
           padding: 1.5rem;
           display: flex;
           flex-direction: column;
-          align-items: center; }
+          align-items: center;
+          border-radius: 25px; }
           .skills .skills-container .skills-right .skills-right-container .sk-right-2 a.github-button {
             border-radius: 25px;
             border: 3px solid black;
@@ -342,6 +349,11 @@ footer {
       padding: 1rem;
       flex-direction: column;
       line-height: 1.5; }
+    nav .nav-container .nav-left li:not(:first-child) {
+      display: none; }
+    nav .nav-container .nav-left .responsive li {
+      transition: .3s;
+      display: inline-block; }
     nav .nav-container .nav-right {
       margin: 1rem 0; }
   .welcome {
@@ -365,6 +377,8 @@ footer {
           font-size: 42px; }
   .skills .skills-container {
     grid-template-columns: 1fr; }
+    .skills .skills-container .skills-left .skill-left-container {
+      border-radius: 1.5rem; }
   .history {
     height: auto; }
     .history .history-container {
@@ -410,7 +424,3 @@ footer {
       flex-direction: column; }
       footer .footer-container .footer-left {
         margin-bottom: 1.5rem; } }
-
-@media screen and (max-width: 1140px) {
-  .skills .skills-container .skills-left .skills-left-container ul li {
-    text-indent: 2rem; } }

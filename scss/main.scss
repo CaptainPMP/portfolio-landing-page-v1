@@ -13,6 +13,12 @@ html,body {
     font-family: 'Kanit', sans-serif;
 }
 
+.responsive {
+    li:not(:first-child) {
+        display: inline-block;
+    }
+}
+
 // $primary-color : #00FACD;
 $primary-color : rgba(0, 211, 165, 0.822);
 

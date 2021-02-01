@@ -1,5 +1,5 @@
 .about-me {
-    height: 525px;
+    height: auto;
     // border: 1px solid red;
     padding: 2.5rem;
 
@@ -30,12 +30,13 @@
             .img {
                 // border: 1px solid red;
                 width: 550px;
-                height: 400px;
+                height: auto;
                 overflow: hidden;
-                border-radius: 25px;
+                // border-radius: 25px;
 
                 img {
                     width: 100%;
+                    border-radius: 25px;
                     // transform: translate(0,-25%);
                 }
             }
