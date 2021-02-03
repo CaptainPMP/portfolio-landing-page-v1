@@ -167,6 +167,7 @@ nav .nav-container {
     width: 100%;
     height: 100%; }
     .about-me .about-me-container .about-me-left {
+      width: 100%;
       padding: 1rem; }
       .about-me .about-me-container .about-me-left h1 {
         font-size: 56px;
@@ -176,11 +177,13 @@ nav .nav-container {
         font-size: 24px;
         line-height: 1.75; }
     .about-me .about-me-container .about-me-right .img {
-      width: 550px;
-      height: auto;
-      overflow: hidden; }
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center; }
       .about-me .about-me-container .about-me-right .img img {
-        width: 100%;
+        width: 80%;
         border-radius: 25px; }
 
 .skills {
@@ -349,7 +352,8 @@ footer {
     .about-me .about-me-container {
       flex-direction: column; }
       .about-me .about-me-container .about-me-right {
-        margin-top: 2rem; }
+        margin-top: 2rem;
+        width: 60%; }
   .history .history-container {
     margin: 0 1rem !important; }
     .history .history-container h1 {
@@ -404,6 +408,8 @@ footer {
           margin-top: 2rem; }
         .welcome .welcome-container .wc-right h1 {
           font-size: 42px; }
+  .about-me .about-me-container .about-me-right {
+    width: 75%; }
   .skills .skills-container {
     grid-template-columns: 1fr; }
     .skills .skills-container .skills-left .skill-left-container {

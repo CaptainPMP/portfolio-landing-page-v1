@@ -93,13 +93,19 @@
         }
     }
 
-    // .about-me {
-    //     .about-me-container {
-    //         .about-me-right {
-
-    //         }
-    //     }
-    // }
+    .about-me {
+        .about-me-container {
+            .about-me-right {
+                width: 75%;
+                // .img {
+                //     img {
+                //         // width: 100% !important;
+                //         // border: 1px solid red;
+                //     }
+                // }
+            }
+        }
+    }
 
     .skills {
         .skills-container {
@@ -136,6 +142,7 @@
             .footer-right {
                 ul {
                     font-size: 22px;
+                    // border: 1px solid red;
                 }
             }
         }
