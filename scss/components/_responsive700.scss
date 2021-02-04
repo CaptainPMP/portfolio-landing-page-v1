@@ -96,13 +96,14 @@
     .about-me {
         .about-me-container {
             .about-me-right {
-                width: 75%;
-                // .img {
-                //     img {
-                //         // width: 100% !important;
-                //         // border: 1px solid red;
-                //     }
-                // }
+                // width: 75%;
+                .img {
+                    width: 75%;
+                    img {
+                        // width: 100% !important;
+                        // border: 1px solid red;
+                    }
+                }
             }
         }
     }

@@ -13,13 +13,16 @@
     }
 
     .about-me {
-        height: auto !important;
+        // height: auto !important;
         .about-me-container {
             flex-direction: column;
             
             .about-me-right {
                 margin-top: 2rem ;
-                width: 60%;
+                // width: 60%;
+                .img {
+                    width: 60%;
+                }
             }
         }
     }
