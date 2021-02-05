@@ -178,11 +178,9 @@ nav .nav-container {
         line-height: 1.75; }
     .about-me .about-me-container .about-me-right {
       display: flex;
-      justify-content: center;
-      border: 1px solid red; }
+      justify-content: center; }
       .about-me .about-me-container .about-me-right .img {
-        border: 1px solid red;
-        width: 80%;
+        width: 550px;
         overflow: hidden;
         display: flex;
         justify-content: center; }
