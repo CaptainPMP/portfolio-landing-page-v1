@@ -180,7 +180,8 @@ nav .nav-container {
       display: flex;
       justify-content: center; }
       .about-me .about-me-container .about-me-right .img {
-        width: 550px;
+        width: 400px;
+        height: auto;
         overflow: hidden;
         display: flex;
         justify-content: center; }

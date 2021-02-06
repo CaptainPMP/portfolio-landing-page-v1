@@ -176,6 +176,7 @@ nav .nav-container {
       .about-me .about-me-container .about-me-left p {
         font-size: 24px;
         line-height: 1.75; }
+<<<<<<< HEAD
     .about-me .about-me-container .about-me-right {
       display: flex;
       justify-content: center; }
@@ -187,6 +188,15 @@ nav .nav-container {
         .about-me .about-me-container .about-me-right .img img {
           width: 100%;
           border-radius: 25px; }
+=======
+    .about-me .about-me-container .about-me-right .img {
+      width: 400px;
+      height: auto;
+      overflow: hidden; }
+      .about-me .about-me-container .about-me-right .img img {
+        width: 100%;
+        border-radius: 25px; }
+>>>>>>> newBranch
 
 .skills {
   padding: 2.5rem;
